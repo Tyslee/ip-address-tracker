@@ -22,6 +22,7 @@ export class AppComponent {
   timezone;
   ISP;
   coord;
+  firstMap = true;
 
   onKey(event) {
     this.currIP = event?.target.value;
@@ -46,8 +47,12 @@ export class AppComponent {
     }
   }
   update() {
-    this.mapComp.removeMap();
+    if (!this.firstMap) {
+      this.mapComp.removeMap();
+    }
+
     this.mapComp.initMap(this.coord);
+    this.firstMap = false;
   }
 
   constructor(private ipGeolocationService: IpGeolocationService) {}
