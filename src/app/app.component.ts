@@ -20,7 +20,7 @@ export class AppComponent {
   currIP = '192.212.174.101';
   location;
   timezone;
-  ISP;
+  ORG;
   coord;
   firstMap = true;
 
@@ -34,10 +34,11 @@ export class AppComponent {
       this.ipGeolocationService
         .getLocationByIP(this.ipAddress)
         .subscribe((data) => {
-          this.location = data.city + ', ' + data.region + ', ' + data.country;
+          this.location =
+            data.city + ', ' + data.region_code + ', ' + data.country_code;
           this.timezone = data.timezone;
-          this.ISP = data.isp;
-          this.coord = [data.lat, data.lon];
+          this.ORG = data.org;
+          this.coord = [data.latitude, data.longitude];
           this.update();
         });
       return true;

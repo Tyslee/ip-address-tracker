@@ -7,11 +7,11 @@ import { config } from 'rxjs';
   providedIn: 'root',
 })
 export class IpGeolocationService {
-  apiUrl = 'http://ip-api.com/json';
+  apiUrl = 'https://ipapi.co';
 
   constructor(private http: HttpClient) {}
 
   getLocationByIP(ipNum: string): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}/${ipNum}`);
+    return this.http.get<any>(`${this.apiUrl}/${ipNum}/json/`);
   }
 }

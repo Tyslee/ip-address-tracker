@@ -28,7 +28,7 @@ Users should be able to:
 - Mobile-first workflow
 - [Angular](https://angular.io//)
 - [Leaflet JS](https://leafletjs.com/)
-- [IP API](https://ip-api.com/)
+- [IP API](https://ipapi.co/)
 - [TailwindCSS](https://tailwindcss.com/)
 
 ### What I learned
