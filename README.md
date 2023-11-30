@@ -21,7 +21,7 @@ Users should be able to:
 - Search for any IP addresses or domains and see the key information and location
 
 ### Links
-- Live Site URL: [ip-address-tracker](https://ip-address-tracker-ka7jjc926-tyson-lees-projects.vercel.app/)
+- Live Site URL: [ip-address-tracker](https://ip-address-tracker-psi-three.vercel.app/)
 
 ## My process
 
