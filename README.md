@@ -1,27 +1,44 @@
-# IpAddressTracker
+## Table of contents
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Useful resources](#useful-resources)
 
-## Development server
+## Overview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### The challenge
 
-## Code scaffolding
+Users should be able to:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- View the optimal layout for the site depending on their device's screen size
+- Input an IP, be warned if the inputted IP is invalid
+- If it is valid, the map should move to the specfied IP address
+- Search for any IP addresses or domains and see the key information and location
 
-## Build
+## My process
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Built with
 
-## Running unit tests
+- Semantic HTML5 markup
+- CSS custom properties
+- Mobile-first workflow
+- [Angular](https://angular.io//)
+- [Leaflet JS](https://leafletjs.com/)
+- [IP API](https://ip-api.com/)
+- [TailwindCSS](https://tailwindcss.com/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### What I learned
 
-## Running end-to-end tests
+This project was used as continued practice of mobile first development. I also wanted to practice with API use in Angular as well as practice using TailwindCSS
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Continued development
 
-## Further help
+I find that the components in Angular is very useful however Angular still has some difficulties importing things from the assets folder directly into the typescript. The keywords offered by Angular in the HTML is also simple and very powerful. I want to continue building great looking sites but hopefully with more interactability!
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Useful resources
+
+- [Build Maps in Angular with Leaflet](https://www.digitalocean.com/community/tutorials/angular-angular-and-leaflet) - This helped me for implementing Leaflet in Angular. It is very simple and easy to follow and understand.

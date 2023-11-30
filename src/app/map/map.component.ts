@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './map.component.html',
   styleUrl: './map.component.css',
 })
-export class MapComponent implements AfterViewInit {
+export class MapComponent {
   public map;
 
   public removeMap(): void {
@@ -46,8 +46,4 @@ export class MapComponent implements AfterViewInit {
   }
 
   constructor(http: HttpClient) {}
-
-  ngAfterViewInit(): void {
-    this.initMap([48.9478, 2.1879]);
-  }
 }
